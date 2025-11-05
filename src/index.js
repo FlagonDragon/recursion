@@ -2,19 +2,18 @@ import './styles.css';
 
 console.log('AYO AYO!');
 
-function fibonacci(num) {
+function fibs(num) {
 
     let xMinus2 = 0;
     let xMinus1 = 1;
     let x = 0;
+    let fibArray = [0];
 
     if (num < 0) {
+        return [];
+    } 
 
-        return 'OOPS';
-
-    } else {
-
-    for (let i = 1; i <= num; i++) {
+    for (let i = 0; i < num - 1; i++) {
 
         xMinus2 = xMinus1
         
@@ -22,32 +21,19 @@ function fibonacci(num) {
 
         x = xMinus2 + xMinus1
 
-    };
-
-    return x;
+        fibArray.push(x);
 
     };
-
-};
-
-function fibs(num) {
-
-    let fibArray = [];
-
-    for (let i = 0; i < num; i++) {
-
-        fibArray.push(fibonacci(i));
-
-    }
 
     return fibArray;
 
-}
+};
 
-console.log(fibs(8));
+console.log(fibs(3));
 
 function fibsRec(num) {
 
+    console.log(num);
     
 }
 
