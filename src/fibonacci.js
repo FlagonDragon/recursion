@@ -75,7 +75,7 @@ function fibsRec(num) {
     } 
 
     if (num == 2) {
-        return fibsArray = [0,1];
+        return fibsArray = [0, 1];
     }
 
     fibsArray = [fibsRec(num - 1)[fibsRec(num - 1).length - 1] + fibsRec(num - 2)[fibsRec(num - 2).length - 1]];    
