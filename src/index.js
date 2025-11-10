@@ -1,5 +1,4 @@
-import './styles.css';
-import fibsRec from './fibonacci.js'
+import fibsRec from './fibonacci.js';
 import mergeSort from './mergeSort.js';
 
 console.log('AYO AYO!');
